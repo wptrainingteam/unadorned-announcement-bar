@@ -1,0 +1,34 @@
+{
+	"name": "wptrainingteam/unadorned-announcement-bar",
+	"description": "A companion plugin for a WordPress Developer Blog article.",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Róbert Mészáros",
+			"homepage": "https://www.meszarosrob.com/"
+		}
+	],
+	"require": {
+		"php": ">=7.4"
+	},
+	"require-dev": {
+		"ergebnis/composer-normalize": "^2.42",
+		"phpcompatibility/phpcompatibility-wp": "*",
+		"roots/wordpress": "~6.4.2",
+		"wp-coding-standards/wpcs": "^3.0"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"ergebnis/composer-normalize": true,
+			"roots/wordpress-core-installer": true
+		}
+	},
+	"extra": {
+		"wordpress-install-dir": "vendor/wordpress"
+	},
+	"scripts": {
+		"phpcs": "@php ./vendor/bin/phpcs",
+		"phpcs:fix": "@php ./vendor/bin/phpcbf"
+	}
+}

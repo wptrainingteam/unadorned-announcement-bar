@@ -1,0 +1,25 @@
+{
+	"landingPage": "/wp-admin/admin.php?page=unadorned-announcement-bar",
+	"preferredVersions": {
+		"php": "8.1",
+		"wp": "latest"
+	},
+	"features": {
+		"networking": true
+	},
+	"steps": [
+		{
+			"step": "login"
+		},
+		{
+			"step": "installPlugin",
+			"pluginZipFile": {
+				"resource": "url",
+				"url": "https://cdn.jsdelivr.net/gh/wptrainingteam/unadorned-announcement-bar/playground/release/1.0.0.zip"
+			},
+			"options": {
+				"activate": true
+			}
+		}
+	]
+}
