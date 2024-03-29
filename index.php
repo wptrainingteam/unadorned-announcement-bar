@@ -132,8 +132,7 @@ function unadorned_announcement_bar_settings() {
 	);
 }
 
-add_action( 'rest_api_init', 'unadorned_announcement_bar_settings' );
-add_action( 'after_setup_theme', 'unadorned_announcement_bar_settings' );
+add_action( 'init', 'unadorned_announcement_bar_settings' );
 
 /**
  * Displays the announcement bar on the front-end.
