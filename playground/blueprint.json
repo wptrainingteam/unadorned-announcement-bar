@@ -15,7 +15,7 @@
 			"step": "installPlugin",
 			"pluginZipFile": {
 				"resource": "url",
-				"url": "https://cdn.jsdelivr.net/gh/wptrainingteam/unadorned-announcement-bar/playground/release/1.0.0.zip"
+				"url": "https://cdn.jsdelivr.net/gh/wptrainingteam/unadorned-announcement-bar/playground/release/1.0.1.zip"
 			},
 			"options": {
 				"activate": true
