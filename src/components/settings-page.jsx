@@ -2,6 +2,8 @@ import { __ } from '@wordpress/i18n';
 import {
 	// eslint-disable-next-line @wordpress/no-unsafe-wp-apis
 	__experimentalHeading as Heading,
+	// eslint-disable-next-line @wordpress/no-unsafe-wp-apis
+	__experimentalVStack as VStack,
 	Button,
 } from '@wordpress/components';
 import { DataForm } from '@wordpress/dataviews/wp';
@@ -18,9 +20,11 @@ const SettingsTitle = () => {
 
 const SaveButton = ( { onClick } ) => {
 	return (
-		<Button variant="primary" onClick={ onClick } __next40pxDefaultSize>
-			{ __( 'Save', 'unadorned-announcement-bar' ) }
-		</Button>
+		<div>
+			<Button variant="primary" onClick={ onClick } __next40pxDefaultSize>
+				{ __( 'Save', 'unadorned-announcement-bar' ) }
+			</Button>
+		</div>
 	);
 };
 
@@ -83,7 +87,7 @@ const SettingsPage = () => {
 	};
 
 	return (
-		<>
+		<VStack spacing={ 4 }>
 			<SettingsTitle />
 			<Notices />
 			<DataForm
@@ -98,7 +102,7 @@ const SettingsPage = () => {
 				}
 			/>
 			<SaveButton onClick={ saveSettings } />
-		</>
+		</VStack>
 	);
 };
 
