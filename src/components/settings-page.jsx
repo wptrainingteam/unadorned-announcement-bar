@@ -25,21 +25,8 @@ const SaveButton = ( { onClick } ) => {
 };
 
 const SettingsPage = () => {
-	const {
-		message,
-		setMessage,
-		display,
-		setDisplay,
-		size,
-		setSize,
-		saveSettings,
-	} = useSettings();
+	const [ settings, setSettings, saveSettings ] = useSettings();
 
-	const data = {
-		message: '',
-		display: false,
-		size: 'small',
-	};
 	const fields = [
 		{
 			id: 'message',
@@ -100,7 +87,7 @@ const SettingsPage = () => {
 			<SettingsTitle />
 			<Notices />
 			<DataForm
-				data={ data }
+				data={ settings }
 				fields={ fields }
 				form={ form }
 				onChange={ () => {} }
