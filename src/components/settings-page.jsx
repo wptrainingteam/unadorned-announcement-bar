@@ -45,11 +45,13 @@ const SettingsPage = () => {
 			id: 'message',
 			label: __( 'Message', 'unadorned-announcement-bar' ),
 			type: 'text',
+			Edit: 'textarea',
 		},
 		{
 			id: 'display',
 			label: __( 'Display', 'unadorned-announcement-bar' ),
 			type: 'boolean',
+			Edit: 'toggle',
 		},
 		{
 			id: 'size',
@@ -73,6 +75,7 @@ const SettingsPage = () => {
 					label: __( 'Extra Large', 'unadorned-announcement-bar' ),
 				},
 			],
+			Edit: 'toggleGroup',
 		},
 	];
 	const form = {
