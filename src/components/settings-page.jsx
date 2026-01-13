@@ -7,6 +7,7 @@ import {
 	PanelBody,
 	PanelRow,
 } from '@wordpress/components';
+import { DataForm } from '@wordpress/dataviews/wp';
 import { useSettings } from '../hooks';
 import { Notices } from './notices';
 import { MessageControl, DisplayControl, SizeControl } from './controls';
