@@ -37,6 +37,7 @@ const SettingsPage = () => {
 
 	const data = {
 		message: '',
+		display: false,
 	};
 	const fields = [
 		{
@@ -44,9 +45,14 @@ const SettingsPage = () => {
 			label: __( 'Message', 'unadorned-announcement-bar' ),
 			type: 'text',
 		},
+		{
+			id: 'display',
+			label: __( 'Display', 'unadorned-announcement-bar' ),
+			type: 'boolean',
+		},
 	];
 	const form = {
-		fields: [ 'message' ],
+		fields: [ 'message', 'display' ],
 	};
 
 	return (
