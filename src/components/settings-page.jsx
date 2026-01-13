@@ -35,7 +35,9 @@ const SettingsPage = () => {
 		saveSettings,
 	} = useSettings();
 
-	const data = {};
+	const data = {
+		message: '',
+	};
 	const fields = [
 		{
 			id: 'message',
