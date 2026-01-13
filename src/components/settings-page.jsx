@@ -38,6 +38,7 @@ const SettingsPage = () => {
 	const data = {
 		message: '',
 		display: false,
+		size: 'small',
 	};
 	const fields = [
 		{
@@ -50,9 +51,32 @@ const SettingsPage = () => {
 			label: __( 'Display', 'unadorned-announcement-bar' ),
 			type: 'boolean',
 		},
+		{
+			id: 'size',
+			label: __( 'Font size', 'unadorned-announcement-bar' ),
+			type: 'text',
+			elements: [
+				{
+					value: 'small',
+					label: __( 'Small', 'unadorned-announcement-bar' ),
+				},
+				{
+					value: 'medium',
+					label: __( 'Medium', 'unadorned-announcement-bar' ),
+				},
+				{
+					value: 'large',
+					label: __( 'Large', 'unadorned-announcement-bar' ),
+				},
+				{
+					value: 'x-large',
+					label: __( 'Extra Large', 'unadorned-announcement-bar' ),
+				},
+			],
+		},
 	];
 	const form = {
-		fields: [ 'message', 'display' ],
+		fields: [ 'message', 'display', 'size' ],
 	};
 
 	return (
