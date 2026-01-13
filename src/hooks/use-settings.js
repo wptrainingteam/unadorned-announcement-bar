@@ -14,10 +14,8 @@ const useSettings = () => {
 	const { createSuccessNotice } = useDispatch( noticesStore );
 
 	useEffect( () => {
-		apiFetch( { path: '/wp/v2/settings' } ).then( ( settings ) => {
-			setMessage( settings.unadorned_announcement_bar.message );
-			setDisplay( settings.unadorned_announcement_bar.display );
-			setSize( settings.unadorned_announcement_bar.size );
+		apiFetch( { path: '/wp/v2/settings' } ).then( ( wpSettings ) => {
+			setSettings( wpSettings.unadorned_announcement_bar );
 		} );
 	}, [] );
 
