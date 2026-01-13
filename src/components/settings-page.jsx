@@ -79,7 +79,18 @@ const SettingsPage = () => {
 		},
 	];
 	const form = {
-		fields: [ 'message', 'display', 'size' ],
+		fields: [
+			{
+				id: 'bar',
+				label: __( 'Bar', 'unadorned-announcement-bar' ),
+				children: [ 'message', 'display' ],
+			},
+			{
+				id: 'appearance',
+				label: __( 'Appearance', 'unadorned-announcement-bar' ),
+				children: [ 'size' ],
+			},
+		],
 	};
 
 	return (
