@@ -24,11 +24,7 @@ const useSettings = () => {
 			path: '/wp/v2/settings',
 			method: 'POST',
 			data: {
-				unadorned_announcement_bar: {
-					message,
-					display,
-					size,
-				},
+				unadorned_announcement_bar: settings,
 			},
 		} ).then( () => {
 			createSuccessNotice(
