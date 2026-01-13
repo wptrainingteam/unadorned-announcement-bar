@@ -84,13 +84,13 @@ const SettingsPage = () => {
 				id: 'bar',
 				label: __( 'Bar', 'unadorned-announcement-bar' ),
 				children: [ 'message', 'display' ],
-				layout: { type: 'card' },
+				layout: { type: 'card', withHeader: false },
 			},
 			{
 				id: 'appearance',
 				label: __( 'Appearance', 'unadorned-announcement-bar' ),
 				children: [ 'size' ],
-				layout: { type: 'card' },
+				layout: { type: 'card', isOpened: false },
 			},
 		],
 	};
