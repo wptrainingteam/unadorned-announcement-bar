@@ -35,11 +35,19 @@ const SettingsPage = () => {
 		saveSettings,
 	} = useSettings();
 
+	const data = {};
+	const fields = [];
+	const form = {};
 	return (
 		<>
 			<SettingsTitle />
 			<Notices />
-			<DataForm />
+			<DataForm
+				data={ data }
+				fields={ fields }
+				form={ form }
+				onChange={ () => {} }
+			/>
 			<SaveButton onClick={ saveSettings } />
 		</>
 	);
