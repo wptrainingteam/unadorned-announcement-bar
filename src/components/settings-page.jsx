@@ -43,7 +43,9 @@ const SettingsPage = () => {
 			type: 'text',
 		},
 	];
-	const form = {};
+	const form = {
+		fields: [ 'message' ],
+	};
 
 	return (
 		<>
