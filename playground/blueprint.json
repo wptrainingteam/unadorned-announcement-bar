@@ -10,7 +10,7 @@
 			"step": "installPlugin",
 			"pluginData": {
 				"resource": "url",
-				"url": "https://raw.githubusercontent.com/wptrainingteam/unadorned-announcement-bar/main/playground/release/1.0.2.zip"
+				"url": "https://raw.githubusercontent.com/wptrainingteam/unadorned-announcement-bar/dataform-refactor/playground/release/2.0.0.zip"
 			},
 			"options": {
 				"activate": true

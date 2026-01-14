@@ -3,7 +3,7 @@
  * Plugin Name: Unadorned Announcement Bar
  * Plugin URI: https://github.com/wptrainingteam/unadorned-announcement-bar
  * Description: A companion plugin for a WordPress Developer Blog article.
- * Version: 1.0.2
+ * Version: 2.0.0
  * Requires at least: 6.1
  * Requires PHP: 7.4
  * Author: Róbert Mészáros
