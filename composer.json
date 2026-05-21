@@ -14,7 +14,7 @@
 	"require-dev": {
 		"ergebnis/composer-normalize": "^2.42",
 		"phpcompatibility/phpcompatibility-wp": "*",
-		"roots/wordpress": "~6.9",
+		"roots/wordpress": "~7.0",
 		"wp-coding-standards/wpcs": "^3.0"
 	},
 	"config": {
